@@ -1,0 +1,228 @@
+/*
+* + * {
+	margin: 1em 0 0;
+}
+*/
+
+body {
+    font-family: 'Public Sans', sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    background: #3a3b3a url(../img/background.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Public Sans', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+}
+
+p {
+    font-family: 'Public Sans', sans-serif;
+    font-style: normal;
+    font-weight: 100;
+}
+
+img {
+    color: #ffffff;
+    font-family: 'Public Sans', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.no-wrap {
+    white-space: nowrap;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 960px;
+    padding: 10px 0 10px 0;
+}
+
+.date {
+    margin-top: 35px;
+}
+
+.weather {
+    float: right;
+    max-width: 350px;
+    height: auto;
+    background-color: rgba(255 255 255 0.1) !important;
+    border-radius: 10px;
+}
+
+.lowTemp {
+    font-size: 16px;
+    color: #6699cc;
+    font-weight: 500;
+    padding: 10px;
+}
+
+.currentTemp {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.highTemp {
+    font-size: 16px;
+    color: #DB5248;
+    font-weight: 500;
+    padding: 10px;
+}
+
+.weather img {
+    float: left;
+    color: #ffffff;
+    font-family: 'Public Sans', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.search-bar {
+    position: relative;
+}
+
+#links {
+    text-align: center;
+    margin-top: 700px;
+}
+
+#links div {
+    padding-top: 10px;
+}
+
+#links a {
+    color: hsla(220, 6%, 70%, 1);
+}
+
+@media (min-width: 1280px) .xl\:grid-cols-5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+.borderFade {
+    padding-bottom: 1px;
+    color: hsla(220, 6%, 70%, 1);
+    position: relative;
+}
+
+.borderFade::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    opacity: 0;
+    transform: translateY(3px);
+    background: hsl(6, 81%, 40%);
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.borderFade:hover::after {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.borderLeftRight {
+    display: inline-block;
+    position: relative;
+    color: hsl(222, 25%, 14%);
+}
+
+.borderLeftRight::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: hsl(243, 80%, 62%);
+    transform-origin: bottom right;
+    transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+.borderLeftRight:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/*
+figure {
+    overflow: hidden;
+    position: relative;
+}
+
+figcaption {
+    background: rgba(0, 0, 0, 0.8);
+    display: table;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: all 300ms;
+    transition-delay: 100ms;
+    z-index: 100;
+}
+
+figcaption p {
+    display: table—cell;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    vertical-align: middle;
+    transition: all 300ms ease—out;
+    display: block;
+    word-wrap: break—word;
+}
+
+hover figcaption {
+    opacity: 1;
+}
+
+hover img {
+    transform: scale(1.4);
+}
+
+hover figcaption p {
+    transform: transtateY(40px);
+}
+*/
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+    .container {
+        margin: 0 auto;
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .myCal {
+        margin: 0 auto;
+        max-width: 100%;
+        padding: 0;
+        flex-basis: 0;
+        flex-grow: 0;
+    }
+
+    .dsktpCol {
+        display: none;
+    }
+
+    .date {
+        margin: auto;
+        width: 100%;
+    }
+}
