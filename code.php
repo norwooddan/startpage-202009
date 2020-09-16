@@ -9,7 +9,7 @@ $record = $reader->city($_SERVER['REMOTE_ADDR']);
 $userCity = $record->city->name;
 
 // Openweathermap
-$jsonurl = "https://api.openweathermap.org/data/2.5/weather?q=" . $userCity . "&units=imperial&appid=05e8c7e2aa4b598ad62f33c75b2ea1c1";
+$jsonurl = "https://api.openweathermap.org/data/2.5/weather?q=" . $userCity . "&units=imperial&appid=[insert_token_here]";
 $json = file_get_contents($jsonurl);
 $weather = json_decode($json);
 $description = $weather->weather[0]->description;
