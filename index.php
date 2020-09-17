@@ -21,39 +21,24 @@ include 'code.php';
 </head>
 
 <body>
-    <div class="container">
-        <div class="row myCal">
-            <div class="col myCal">
-                <div class="date">
-                    <h4>
-                        <span id="myCal2" class="no-wrap"></span>
-                        <span id="myTime" class="no-wrap"></span>
-                    </h4>
-                </div>
+    <div class="container clearfix">
+        <div class="row justify-content-md-center">
+            <div class="col-12 col-sm-4 w-100 datetime">
+                <h4>
+                    <span id="myCal2" class="no-wrap"></span>
+                    <span id="myTime" class="no-wrap"></span>
+                </h4>
             </div>
-            <div class="col-2 dsktpCol">
-            </div>
-            <div class="col">
-                <div class="float-right">
-                    <table class="float-right">
-                        <tr>
-                            <td>
-                                <img src="<?=$iconurl?>" alt="<?php echo $description; ?>" title="<?php echo $description; ?>" /> 
-                            </td>
-                            <td>
-                                <span class="lowTemp"><?php echo floor($templow); ?>&deg;F</span>
-                                <span class="currentTemp"><?php echo floor($tempnow); ?>&deg;F</span>
-                                <span class="highTemp"><?php echo floor($temphigh); ?>&deg;F</span>
-                            </td>
-                        </tr>
-                    </table>
-                </div>
+            <div class="col-12 col-sm-4 d-none d-md-block"></div>
+            <div class="col-12 col-sm-4 sm-12 weather">
+                <img src="<?=$iconurl?>" alt="<?php echo $description; ?>" title="<?php echo $description; ?>" />
+                <span class="lowTemp"><?php echo floor($templow); ?>&deg;F</span>
+                <span class="currentTemp"><?php echo floor($tempnow); ?>&deg;F</span>
+                <span class="highTemp"><?php echo floor($temphigh); ?>&deg;F</span>
             </div>
         </div>
-    </div>
-    <div id="links" class="container">
-        <div class="row">
-            <div class="col">
+        <div id="links" class="row justify-content-center">
+            <div class="col-4 col-sm">
                 <h5>Work</h5>
                 <div>
                     <a class="text-secondary" href="https://nexus.aspirei.com">Nexus</a>
@@ -69,7 +54,7 @@ include 'code.php';
                         Parlor</a>
                 </div>
             </div>
-            <div class="col">
+            <div class="col-4 col-sm">
                 <h5>Media</h5>
                 <div>
                     <a class="text-secondary" href="https://reddit.com">Reddit</a>
@@ -84,7 +69,7 @@ include 'code.php';
                     <a class="text-secondary" href="https://espn.com">ESPN</a>
                 </div>
             </div>
-            <div class="col">
+            <div class="col-4 col-sm">
                 <h5>Crypto</h5>
                 <div>
                     <a class="text-secondary" href="https://coinbase.com">Coinbase</a>
@@ -102,7 +87,7 @@ include 'code.php';
                     <a class="text-secondary" href="https://www.coingecko.com/en">Coin Gecko</a>
                 </div>
             </div>
-            <div class="col">
+            <div class="col-4 col-sm">
                 <h5>Learn</h5>
                 <div>
                     <a class="text-secondary" href="https://www.edx.org/">EDX</a>
@@ -117,7 +102,7 @@ include 'code.php';
                     <a class="text-secondary" href="https://www.codecademy.com/">Codeacademy</a>
                 </div>
             </div>
-            <div class="col">
+            <div class="col-4 col-sm">
                 <h5>Home</h5>
                 <div>
                     <a class="text-secondary" href="https://unifi.ui.com/">Unifi</a>
