@@ -1,7 +1,7 @@
 body {
-    font-family: 'Public Sans', sans-serif;
+    font-family: 'proxima_novaregular', 'Public Sans', sans-serif;
     font-style: normal;
-    font-weight: 100;
+    font-weight: normal;
     background: #3a3b3a url(../img/background.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -16,15 +16,15 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Public Sans', sans-serif;
+    font-family: 'proxima_novablack', 'Public Sans', sans-serif;
     font-style: normal;
     font-weight: 900;
 }
 
 p {
-    font-family: 'Public Sans', sans-serif;
+    font-family: 'proxima_novablack', 'Public Sans', sans-serif;
     font-style: normal;
-    font-weight: 100;
+    font-weight: normal;
 }
 
 .no-wrap {
