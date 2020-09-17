@@ -42,7 +42,7 @@ p {
     text-align: center;
 }
 
-.weather{
+.weather {
     margin: 0 auto;
     width: 100%;
     display: block;
@@ -82,12 +82,13 @@ p {
 }
 
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
-    .weather{
+    .weather {
         margin: 0 auto;
         width: 100%;
         display: block;
         text-align: center;
     }
+
     .weather img {
         width: 80px;
         height: 80px;
@@ -98,6 +99,7 @@ p {
         margin-top: 80px;
         margin-bottom: 50px;
     }
+
     .row {
         margin: 0;
     }
